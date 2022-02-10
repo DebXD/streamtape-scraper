@@ -3,9 +3,10 @@ from decouple import config
 
 file_id = input("Enter file ID : ")
 print("processing...")
-
+#required values:
 login_key = config('API_USERNAME')
 key = config('API_PASSWORD')
+#get this values from account panel of streamtape
 
 def get_ticket(file_id):
     headers = {'file':file_id,'login':login_key,'key':key}
@@ -34,16 +35,12 @@ def dl_url(ticket,file_id):
     
 download_link = dl_url(ticket,file_id)
 dl_now = input("Do You want to download now! y/n : ")
+
 if dl_now =='y':
     print("Downloading🙂...Please Wait...")
     r = requests.get(download_link)
     open("video.mp4", 'wb').write(r.content)
+    print("Download is Completed\n Exiting...")
 else:
     print("OK Bye!")
     pass
-    
-
-
-
-
-
