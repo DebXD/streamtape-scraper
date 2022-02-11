@@ -44,4 +44,3 @@ if dl_now =='y':
     console.print("Download is Completed\n Exiting...", style = "italic #FFC0CB")
 else:
     console.print("OK Bye!", style = "italic violet" )
-    pass
