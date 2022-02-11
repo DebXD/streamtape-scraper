@@ -19,7 +19,7 @@
  ### Run this Project :
 ```python3 streamtape_downloader.py
 ```
-## To Download file, get the file id of any streamtape link 
+#### To Download file, get the file id of any streamtape link 
 Example : `https://streamtape.com/v/file_id/`
 
 That's it.
