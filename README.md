@@ -10,7 +10,6 @@
  ### Install the requirements :
  ```pip3 install -r requirements. txt
  ```
- 
  ## Usage:
  1. You need to create an account in streamtape.com and get the `API Username`,`API Password` from the account panel.
 
