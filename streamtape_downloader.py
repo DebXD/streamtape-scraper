@@ -1,9 +1,9 @@
 import requests ,json, time
 from rich.console import Console
 from decouple import config
+from get_file_id import file_id
 
 console = Console()
-file_id = input("Enter file ID : ")
 console.print("Processing...", style="bold cyan")
 
 login_key = config('API_USERNAME')
@@ -41,6 +41,6 @@ if dl_now =='y':
     console.print("Downloading🙂...Please Wait...", style = "bold blue")
     r = requests.get(download_link)
     open("video.mp4", 'wb').write(r.content)
-    console.print("Download is Completed\n Exiting...", style = "italic #FFC0CB")
+    console.print("Download is Completed \nExiting...", style = "italic #FFC0CB")
 else:
     console.print("OK Bye!", style = "italic violet" )
