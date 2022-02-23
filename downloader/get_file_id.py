@@ -1,4 +1,3 @@
-#string = 'https://streamtape.com/v/oA8Brg6OQOTJV3P/zjjsbszjsnshsjzhz'
 string = input(" Enter link : ")
 lst = []
 for i in string:

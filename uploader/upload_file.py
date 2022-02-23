@@ -10,9 +10,6 @@ console.print("Uploading...", style="bold red")
 files = { 'file' : ("@"+path,open(path,'rb'), 'multipart/form-data')}
 session = requests.Session()
 
-#login_id = config('API_USERNAME')
-#key_id = config('API_PASSWORD')
-
 def ul_video(ul_url):
     headers = { "login":login_id,"key":key_id }
     try:
