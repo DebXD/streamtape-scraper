@@ -21,8 +21,15 @@
  2. Paste those two things in `example.env` and rename it to `.env` afterwards.
  
  ### Run this Project :
+• To Download : 
 ```
 python3 streamtape_downloader.py
+```
+
+• To Upload :
+```
+cd uploader
+python3 upload_file.py
 ```
 
 That's it.
