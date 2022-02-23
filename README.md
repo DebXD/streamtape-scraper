@@ -13,13 +13,13 @@
  ```
  ### Install the requirements :
  ```
- pip3 install -r requirements. txt
+ pip3 install -r requirements.txt
  ```
  
  ## Usage:
  1. You need to create an account in streamtape.com and get these `API Username`,`API Password` credentials from the account panel.
 
- 2. Paste those two things in `example.env` and rename it to `.env` afterwards.
+ 2. Paste those two things in `example.env` and rename it to `.env` afterwards. Do not add inverted comma or quotes.
  
  ### Run this Project :
 ```
@@ -30,7 +30,11 @@ python3 run.py
 4. Enter the path of your video if you want to upload a video.
  example : `/sdcard/Downloads/video.mp4`
 
+
+
 *Note : Remember you can not upload while using proxy.
+
+
 
 That's it.
 
