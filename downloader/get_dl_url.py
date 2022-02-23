@@ -1,7 +1,7 @@
 import requests ,json, time
 from rich.console import Console
 from decouple import config
-from get_file_id import file_id
+from downloader.get_file_id import file_id
 
 console = Console()
 console.print("Processing...", style="bold cyan")
@@ -33,14 +33,5 @@ def dl_url(ticket,file_id):
     size_in_MB = int(byte_size/1024/1024)
     console.print(f'File Size : {size_in_MB}MB', style = "bold red")
     return link
-    
 download_link = dl_url(ticket,file_id)
-dl_now = input("Do You want to download now! y/n : ")
-
-if dl_now =='y':
-    console.print("Downloading🙂...Please Wait...", style = "bold blue")
-    r = requests.get(download_link)
-    open("video.mp4", 'wb').write(r.content)
-    console.print("Download is Completed \nExiting...", style = "italic #FFC0CB")
-else:
-    console.print("OK Bye!", style = "italic violet" )
+    
