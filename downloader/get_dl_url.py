@@ -25,7 +25,7 @@ for i in range(3,0,-1):
         #without this sleep method api will return  error 403[forbidden]
 
 def dl_url(ticket,file_id):
-    headers = {'file':file_id,'ticket':ticket,'login':'02cae24c18bff009e4a6','key':'OajOPjPlLPTZv0W'}
+    headers = {'file':file_id,'ticket':ticket,'login':login_key,'key': key}
     response = requests.get("https://api.streamtape.com/file/dl?",headers)
     data = json.loads(response.text)
     link = data.get('result').get('url')

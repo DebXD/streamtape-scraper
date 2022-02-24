@@ -11,5 +11,6 @@ for i in lst2:
         break;
     else:
         file_id += i
+print(file_id)
     
         
