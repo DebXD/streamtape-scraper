@@ -1,4 +1,4 @@
-import requests, json
+import requests
 from rich.console import Console
 from downloader.get_dl_url import *
 

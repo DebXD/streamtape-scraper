@@ -1,5 +1,4 @@
-import requests, json, ssl
-from decouple import config
+import requests, ssl
 from rich.console import Console
 from uploader.get_ul_url import *
 
