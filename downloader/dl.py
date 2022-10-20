@@ -11,7 +11,7 @@ def download(download_link):
     if dl_now =='n':
         console.print("OK Bye!", style = "italic violet" )
     else:
-        console.print("Downloading🙂...Please Wait...", style = "bold blue")
+        console.print("Downloading...Please Wait...", style = "bold blue")
         r = requests.get(download_link)
         open(file_id +'.mp4', 'wb').write(r.content)
         console.print("Download is Completed\nExiting...", style = "bold green")

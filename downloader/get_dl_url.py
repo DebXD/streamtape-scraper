@@ -11,7 +11,7 @@ key = config('API_PASSWORD')
 
 def get_ticket(file_id):
     headers = {'file':file_id,'login':login_key,'key':key}
-    response = requests.get("https://api.streamtape.com/file/dlticket?",headers)
+    response = requests.get("https://api.strtape.tech/file/dlticket?",headers)
     data = json.loads(response.text)
 
     ticket = data.get('result').get('ticket')
@@ -26,7 +26,7 @@ for i in range(3,0,-1):
 
 def dl_url(ticket,file_id):
     headers = {'file':file_id,'ticket':ticket,'login':login_key,'key': key}
-    response = requests.get("https://api.streamtape.com/file/dl?",headers)
+    response = requests.get("https://api.strtape.tech/file/dl?",headers)
     data = json.loads(response.text)
     link = data.get('result').get('url')
     byte_size = data.get('result').get('size')

@@ -10,7 +10,7 @@ session = requests.Session()
 def get_url():
     cred = { "login":login_id,"key":key_id }
     console.print("Please be Patient...", style = "bold yellow")
-    response = session.get("https://api.streamtape.com/file/ul?",headers=cred,)
+    response = session.get("https://api.strtape.tech/file/ul?",headers=cred,)
     
     data = json.loads(response.text)
     ul_url = data.get('result').get('url')
