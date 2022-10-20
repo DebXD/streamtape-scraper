@@ -1,4 +1,4 @@
-import requests, ssl
+import requests
 from rich.console import Console
 from uploader.get_ul_url import *
 
@@ -15,8 +15,8 @@ def ul_video(ul_url):
         response = session.post(ul_url,files = files,headers=headers)
         data = json.loads(response.text)
         url = data.get('result').get('url')
-        size_in_bytes = data.get('result').get('size')
-        mb = int(size_in_bytes)/1024/1024
+        #size_in_bytes = data.get('result').get('size')
+        #mb = int(size_in_bytes)/1024/1024
         console.print("Uploaded Successfully", style = "bold green")
         return url
     except Exception as e:
