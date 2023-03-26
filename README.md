@@ -3,13 +3,13 @@
  
  [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
   [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
-[![license](https://img.shields.io/github/license/DebiprasadXD/streamtape-scrapper)](https://github.com/DebiprasadXD/streamtape-scrapper/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/DebiprasadXD/streamtape-scrapper)](https://github.com/DebXD/streamtape-scraper/blob/master/LICENSE)
  [![Total alerts](https://img.shields.io/lgtm/alerts/g/DebiprasadXD/streamtape-downloader.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/DebiprasadXD/streamtape-downloader/alerts/)
  
  ## Use this Project :
  ```
- git clone https://github.com/DebiprasadXD/streamtape-scrapper
- cd streamtape-scrapper
+ git clone https://github.com/DebXD/streamtape-scraper
+ cd streamtape-scraper
  ```
  ### Install the requirements :
  ```
