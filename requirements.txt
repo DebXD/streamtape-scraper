@@ -6,6 +6,6 @@ idna==3.3
 Pygments==2.11.2
 PySSL==0.0.7
 python-decouple==3.6
-requests==2.27.1
+requests==2.31.0
 rich==11.2.0
 urllib3==1.26.8
